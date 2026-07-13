@@ -2,14 +2,14 @@
 
 A live mirror of an [Odyn](https://app.odyn.dev) project. Synced one-way from Odyn to GitHub on every successful production deploy, so every version of your code is preserved in your own repository.
 
-**Latest version:** v10
-**Deployed:** 2026-06-24T10:45:38.535Z
+**Latest version:** v11
+**Deployed:** 2026-07-13T15:24:52.307Z
 
 ## Layout
 
 - `src/` — current project source. Mirrors what you write in the Odyn editor.
-- `dist/v1/` … `dist/v10/` — built artifacts for each deploy. Versions accumulate; nothing here is ever overwritten.
-- `dist/latest/` — built artifacts for v10 (the most recent deploy). Overwritten on every deploy; files no longer produced are removed.
+- `dist/v1/` … `dist/v11/` — built artifacts for each deploy. Versions accumulate; nothing here is ever overwritten.
+- `dist/latest/` — built artifacts for v11 (the most recent deploy). Overwritten on every deploy; files no longer produced are removed.
 - Each deploy commit is tagged `v{n}`.
 
 ## One-way mirror
@@ -22,22 +22,22 @@ If this repo is **public** on GitHub, [jsDelivr](https://www.jsdelivr.com/github
 
 For jsDelivr embeds in production, **always pin to a version tag**. Tagged URLs are immutable and cached forever; branch-path URLs (`@main/dist/latest/...`) are cached for up to 12 hours, so they lag your deploys.
 
-### Pinned to v10 (recommended for jsDelivr — immutable, cached forever)
+### Pinned to v11 (recommended for jsDelivr — immutable, cached forever)
 
-- `core/barba.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/core/barba.js
-- `features/example.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/features/example.js
-- `features/navigation-dropdowns.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/features/navigation-dropdowns.js
-- `main.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/main.js
-- `chunk-C3YST2EA.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/chunk-C3YST2EA.js
-- `chunk-UNIPIMXR.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/chunk-UNIPIMXR.js
-- `css/variables.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/css/variables.css
-- `css/mast.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/css/mast.css
-- `css/base.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/css/base.css
-- `css/accordions.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/css/accordions.css
-- `css/buttons.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/css/buttons.css
-- `css/cards.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v10/dist/v10/css/cards.css
+- `core/barba.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/core/barba.js
+- `features/example.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/features/example.js
+- `features/navigation-dropdowns.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/features/navigation-dropdowns.js
+- `main.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/main.js
+- `chunk-C3YST2EA.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/chunk-C3YST2EA.js
+- `chunk-UNIPIMXR.js` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/chunk-UNIPIMXR.js
+- `css/variables.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/css/variables.css
+- `css/mast.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/css/mast.css
+- `css/base.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/css/base.css
+- `css/accordions.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/css/accordions.css
+- `css/buttons.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/css/buttons.css
+- `css/cards.css` → https://cdn.jsdelivr.net/gh/meetpilou/odyn-abvd26webs@v11/dist/v11/css/cards.css
 
-…and 17 more under `dist/v10/`.
+…and 17 more under `dist/v11/`.
 
 `dist/latest/` is best used for direct GitHub raw, GitHub Pages, or local checkout — not for jsDelivr-fronted production traffic.
 

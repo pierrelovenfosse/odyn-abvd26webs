@@ -23,7 +23,7 @@
       color: var(--_color---form--error-background);
     }
 
-    & input:checked~.radiocheck-custom {
+    & input:checked ~ .radiocheck-custom {
       background-color: var(--_color---form--error-background);
       border-color: var(--_color---form--error-border);
       color: var(--_color---form--error-background);
@@ -48,13 +48,13 @@
 
 [data-form-validate] {
   & .radiocheck-field {
-    & input:focus-visible~.radiocheck-custom {
+    & input:focus-visible ~ .radiocheck-custom {
       background-color: var(--_color---form--focus-background);
       border-color: var(--_color---form--focus-border);
     }
 
-    & input:checked~.radiocheck-custom,
-    & input:focus-visible:checked~.radiocheck-custom {
+    & input:checked ~ .radiocheck-custom,
+    & input:focus-visible:checked ~ .radiocheck-custom {
       background-color: var(--_color---form--success-background);
       border-color: var(--_color---form--success-border);
       color: var(--_color---form--text);
@@ -64,11 +64,11 @@
       margin-top: 0.125em;
     }
   }
-
+  /*
   & select:has(option[value=""]:checked) {
     color: var(--_color---form--placeholder);
   }
-
+*/
   & .form-input.is-fake.is-empty {
     color: var(--_color---form--placeholder);
   }

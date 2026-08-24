@@ -19,6 +19,7 @@ import {
   isFirstLoad,
   runPageOnceAnimation,
   initLeaveTransition,
+  initHistoryTransitionReset,
   initPrefetch,
 } from "./core/transitions.js";
 import * as features from "./core/features.js";
@@ -59,8 +60,9 @@ document.fonts.ready.then(() => {
       refreshScrollTrigger();
     });
 
-    initPrefetch();
+    initHistoryTransitionReset();
     initLeaveTransition();
+    initPrefetch();
     initWindowEvents();
   });
 });

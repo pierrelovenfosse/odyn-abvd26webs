@@ -130,6 +130,9 @@
     &:is(:hover, :focus-visible) {
       color: var(--_color---neutral--white);
 
+      .eyebrow {
+        color: var(--_color---neutral--white);
+      }
       .article-card__footer {
         border-color: rgba(255, 255, 255, 0.3);
       }

@@ -1,0 +1,13 @@
+img[data-click-zoom],
+[data-click-zoom] img,
+[data-click-zoom-article] img {
+  cursor: zoom-in;
+}
+
+[data-click-zoom-lightbox] > img {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+  -webkit-user-drag: none;
+}

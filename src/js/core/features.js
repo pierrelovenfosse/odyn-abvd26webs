@@ -32,6 +32,7 @@ import { initThemeBend } from "../features/theme-bend";
 import { initTestimonials } from "../features/testimonials";
 import { initVideoBackground } from "../features/video-background";
 import { initBunnyPlayer } from "../features/video-player";
+import { initClickToZoomBasic } from "../features/click-to-zoom";
 
 function initFeatures(items, scope) {
   Object.keys(items).forEach((key) => {
@@ -47,6 +48,7 @@ export function once() {
 }
 
 export function beforeEnter(scope) {
+  console.log("beforescope");
   initFeatures(
     {
       "[data-image-cycle]": initImageCycle,
@@ -60,7 +62,7 @@ export function beforeEnter(scope) {
       "[data-clients-list-init]": initClientsList,
       "[data-current-year]": initCurrentYear,
       "[data-filter-group]": initFilters,
-
+      "[data-click-zoom-article]": initClickToZoomBasic,
       "[data-form-validate]": initFormValidation,
       "[data-addresses-init]": initGoogleMaps,
       "[data-gsap-slider-init]": initGsapSliders,

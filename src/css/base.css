@@ -189,7 +189,7 @@ body {
   margin-bottom: 0;
 }
 
-.w-richtext a {
+.w-richtext a:not(.u-link-cover) {
   position: relative;
   z-index: 4;
 }
